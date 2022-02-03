@@ -11,7 +11,7 @@ form.addEventListener('submit', async (e) => {
     const password = passwordF.value;
 
     try {
-        await axios.post('http://localhost:5000/api/users/register', {
+        await axios.post('https://tasnewsletter.herokuapp.com/api/users/register', {
             name, email, password
         })
         nameF.value = "";
