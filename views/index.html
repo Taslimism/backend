@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>My Newsletter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js" integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form id="form" action="http://localhost:5000/api/users/register" method="POST">
+    <img class="mb-4" src="image/image.png" alt="" width="100" height="97">
+    <h1 class="h3 mb-3 fw-normal">Sign Up for my Newsletter</h1>
+
+    <div class="form-floating top">
+      <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+    </div>
+
+    <div class="form-floating middle">
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+      </div>
+
+    <div class="form-floating bottom">
+      <input id="email" type="email" class="form-control" name = "email" placeholder="Your Email">
+    </div>
+
+    
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign UP</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Taslim Raza Ansari</p>
+  </form>
+</main>
+
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
